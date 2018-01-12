@@ -10,9 +10,7 @@ public class VendingMachineTest implements IDisplay {
     @Test
     public void displaysZeroBalance() {
         VendingMachine vendingMachine = new VendingMachine();
-        IDisplay display = this;
-
-        vendingMachine.displayBalance(display);
+        vendingMachine.displayBalance(this);
 
         assertEquals("0", displayText);
     }
