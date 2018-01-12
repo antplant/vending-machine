@@ -8,6 +8,6 @@ public class VendingMachine {
     }
 
     public void insertCoin(int pence) {
-        this.balance = pence;
+        this.balance += pence;
     }
 }
