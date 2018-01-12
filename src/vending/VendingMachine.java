@@ -1,7 +1,13 @@
 package vending;
 
 public class VendingMachine {
-    public void displayBalance(IDisplay vendingMachineTests) {
-        vendingMachineTests.display("0");
+    private int balance;
+
+    public void displayBalance(IDisplay display) {
+        display.display(Integer.toString(balance));
+    }
+
+    public void insertCoin(int pence) {
+        this.balance = pence;
     }
 }
